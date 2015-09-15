@@ -1,0 +1,22 @@
+#my{width: 100%; display: table; background: #efefef;}
+#my .bar{border-bottom: 1px solid #f4a144;}
+#my .title.my{font-size: 16px; font-weight: bold; color: #484848;}
+#my .mySearch{color: #f4a144;}
+
+#my .myList{width: 100%; display: table; margin-top: 86px; margin-bottom: 51px;}
+#my .myList .Name{width: 100%; height: 42px; line-height: 42px; font-size: 14px; font-weight: bold; color: #808080;  }
+#my .myList .myListIcon{width: 42px; height: 42px; text-align: center; line-height: 42px; background: #ff824c;}
+#my .myList .myListIcon i{color: #fff;}
+
+#my .myList .myListIcon.recommend{background: #c8d8a0;}
+#my .myList .myListIcon.collect{background: #00c76c;}
+#my .myList .myListIcon.swan{background:#f0a4a4;}
+#my .myList .myListIcon.baike{background:#ff804a;}
+#my .myList .myListIcon.info{background:#9aceec;}
+#my .myList .myListIcon.integral{background:#fdc292;}
+.table-view-cell{background: #fff;    border-bottom: 1px solid #f9f9f9; padding: 8px 65px 8px 15px;}
+
+
+
+
+

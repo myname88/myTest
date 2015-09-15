@@ -1,0 +1,10 @@
+ul li{list-style: none;}
+#portal{width: 100%; display: table;}
+#portal header a{color: #ea6308;} 
+#portal header a span{font-size: 16px;  font-weight: bold; color: #ea6308;}
+.titPortal{font-size: 18px; font-weight: bold;color: #6c6c6c;}
+#portal .bar{border-bottom: 1px solid #fbbb72;}
+#portal .portalConten{width: 100%; height: 50px;  margin-top: 44px;}
+#portal .portalConten ul{width: 100%; height:50px; margin: 0px; padding: 0px;}
+#portal .portalConten ul li{width: 100%; height: 44px; padding: 0px 10px; font-size: 16px; font-weight: bold; color: #7e7f7f; background: #fff; line-height: 44px; border-bottom: 1px solid #f5f5f5;}
+#portal .portalConten ul li img{width: 30px; height: 18px; vertical-align: middle;}

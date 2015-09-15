@@ -1,0 +1,93 @@
+<div data-view="js/question" id="question" class="views">
+<link rel="stylesheet" type="text/css" href="css/question.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css" />
+<link type="text/css" rel="stylesheet" href="../css/nav.css" />
+<div class="content current">
+    <div class="header">
+        <a data-action="back" class="back icon icon-left-nav">返回</a>
+        <h2>越秀爱问</h2>
+        <div class="hd-r">
+            <div class="search">
+                <span class="fa fa-search fa-2x"></span>
+            </div>
+            <div class="classify">
+                <span><i class="fa fa-list-ul fa-2x"></i></span>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- 问题列表 -->
+<div class="question-wrapper">
+    <div class="question-scroller">
+    <div class="down">松开手刷新...</div>
+    <div class="question-list">
+        <div class="classify-in guodu">
+                <ul>
+                    <li><a href="javascript:;">全部问题</a></li>
+                    <li><a href="javascript:;">推荐问题</a></li>
+                    <li><a href="javascript:;">待解决问题</a></li>
+                    <li><a href="javascript:;">已解决问题</a></li>
+                    <li><a href="javascript:;">爱问分类</a></li>
+                    <li><a href="javascript:;">爱问达人</a></li>
+                </ul>
+        </div>
+        <!-- ———————————————— -->
+    </div>
+    </div>
+</div>
+<div class="question-loading"><span>Loading</span></div>
+    <!-- 提问弹窗 -->
+    <div class="askQuestion"></div>
+    <div class="cover guodu">
+        <div class="askQuestion-tan">
+            <div class="askQuestion-title">
+                <span>标题：</span>
+                <input type="text" id="title" value="请输入问题..." />
+            </div>
+            <div class="askQuestion-detail">
+                <span>问题<br />说明：</span>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="buttons">
+                <button class="submit">确认提交</button>
+                <button class="cancel">取消</button>
+            </div>
+        </div>
+    </div>
+   
+    <div class="navFixed">
+		<a href="#/views/main">
+			<span class="navIcon"><img src="../images/nav/nav_1-1.png"/></span>首页
+		</a>
+		<a  href="#/views/knowledge">
+			<span class="navIcon"><img src="../images/nav/nav_2_1.png"/></span>知识
+		</a>
+		<a class="navSelected" href="#/views/question">
+			<span class="navIcon"><img src="../images/nav/nav_3_2.png"/></span>爱问
+		</a>
+		<a>
+			<span class="navIcon"><img src="../images/nav/nav_4_1.png"/></span>消息
+		</a>
+		<a href="#/views/my">
+			<span class="navIcon"><img src="../images/nav/nav_5_1.png"/></span>我
+		</a>
+  	</div>
+</div>
+<script type="text/template" class="question-moban">
+<% for(var i =0; i<data.length;i++){ %>
+        <div class="question-box">
+            <h3 class="question-title"><%=data[i].title%></h3>
+            <div class="question-info">
+                <span class="money"><i class="fa fa-database "></i><%=data[i].collect%></span>
+                <span class="author"><%=data[i].author%></span>
+                <span class="pubDate"><%=data[i].pubDate%></span>
+                <span class="tags"><i class="fa fa-tags"></i><%=data[i].commentCount%></span>
+            </div>
+        </div>
+<% } %>
+</script>
+
+
+</div>

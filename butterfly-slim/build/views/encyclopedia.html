@@ -1,0 +1,61 @@
+<div data-view="js/encyclopedia" id="EncyclopediaViews" class="views">
+<link rel="stylesheet" type="text/css" href="css/knowledge.css">
+<nav>
+    <div class="nav-back"><i class="fa fa-chevron-left fa-lg"></i><a data-action="back">返回</a></div>
+	<div class="Title left Hide">越秀百科</div>
+	<div class="icon right">
+		<span><i class="fa fa-search fa-lg"></i></span>
+		<span><i class="fa fa-list fa-lg"></i></span>
+	</div>
+	
+</nav>
+<div class="KnowledgeDown fsize12">
+		<ul>
+			<li>全部百科</li>
+			<li>推荐百科</li>
+			<li>最新百科</li>
+			<li class="no-line">最热百科</li>
+	    </ul>
+	</div>
+<div class="content Hide Btm">
+    <div class="ecd-content">
+    	<ul id="GetEncyclopedia">
+    		
+    	</ul>
+
+     <script type="text/template" class="KnowledgeJson">
+        <% for(var i =0 ; i<data.length;i++){ %>
+            <li class="left">
+               <div class="ecd-top">
+                  <div class="ecd-title fsize14"><%= data[i].Title %></div>
+                  <div class="ecd-txt fsize12"><%= data[i].Content %></div>
+               </div>
+               
+               <div class="ecd-bot">
+                  <span class="first-span fsize12"><%= data[i].Title %></span>
+                  <span class="second-span fsize12"><i class="fa fa-eye fa-lg"></i><%= data[i].Comment %></span>
+                  <span class="fsize12 second-span right"><%= data[i].Time %></span>
+               </div>
+            </li>
+        <% } %>
+     </script>
+    </div>
+</div>
+<div class="navFixed">
+    <a href="#/views/main">
+      <span class="navIcon"><img src="../images/nav/nav_1-1.png"/></span>首页
+    </a>
+    <a class="navSelected" href="#/views/knowledge">
+      <span class="navIcon"><img src="../images/nav/nav_2_2.png"/></span>知识
+    </a>
+    <a href="#/views/question">
+      <span class="navIcon"><img src="../images/nav/nav_3_1.png"/></span>爱问
+    </a>
+    <a>
+      <span class="navIcon"><img src="../images/nav/nav_4_1.png"/></span>消息
+    </a>
+    <a href="#/views/my">
+      <span class="navIcon"><img src="../images/nav/nav_5_1.png"/></span>我
+    </a>
+</div>
+</div>

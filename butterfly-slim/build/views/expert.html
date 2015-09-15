@@ -1,0 +1,59 @@
+<div data-view="js/expert" id="expert" class="views">
+<link rel="stylesheet" type="text/css" href="css/question.css" />
+<link rel="stylesheet" type="text/css" href="css/expert.css" />
+<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.min.css" />
+<div class="content current">
+    <div class="header">
+        <a data-action="back" class="back icon icon-left-nav">返回</a>
+        <h2>越秀专家</h2>
+        <div class="hd-r">
+            <div class="search">
+                <span class="fa fa-search fa-2x"></span>
+            </div>
+            <div class="classify">
+                <span><i class="fa fa-list-ul fa-2x"></i></span>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-- 专家 -->
+    <div class="question-wrapper">
+    <div class="question-scroller">
+    <div class="down">松开手刷新...</div>
+    <div class="question-list">
+        <div class="classify-in guodu">
+                <ul>
+                    <li><a href="javascript:;">所有专家</a></li>
+                    <li><a href="javascript:;">集团专家</a></li>
+                    <li><a href="javascript:;">房托专家</a></li>
+                    <li><a href="javascript:;">交通专家</a></li>
+                    <li><a href="javascript:;">金融专家</a></li>
+                </ul>
+        </div>
+        <!-- ———————————————— -->
+    </div>
+    </div>
+</div>
+<div class="question-loading"><span>Loading</span></div>
+
+<script type="text/template" class="expert-moban">
+<% for(var i =0;i<data.length;i++){ %>
+    <div class="expert-list">
+        <a class="href" href="#/views/expert-detail"></a>
+        <div class="expert-list-l">
+            <img src="images/001.png" alt="" height="70px" />
+        </div>
+        <div class="expert-list-r">
+            <p class="expert-name"><%=data[i].name%></p>
+            <p class="expert-department">越秀集团>>财务部</p>
+            <span class="expert-job"><%=data[i].field%></span>
+        </div>
+        <span class="expert-details"></span>
+    </div>
+   <% } %>
+</script>
+</div>
+
+</div>

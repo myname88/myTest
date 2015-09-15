@@ -1,0 +1,18 @@
+
+
+
+#expert .content{background: #efefef;font-size:12px ;color:#333;font-weight: bold;}
+.expert-list{background: #fff;height: 90px;padding: 10px;margin-bottom: 10px;position: relative;overflow: hidden;border-radius: 5px;}
+.expert-list .expert-list-l{height: 100%;float: left;margin-right: 10px;}
+.expert-list .expert-list-r{height: 100%;float: left;line-height: 22px;}
+.expert-list .expert-list-r p{overflow: hidden;-ms-text-overflow: ellipsis;
+text-overflow: ellipsis;white-space: nowrap;}
+.expert-list .expert-list-r .expert-job{display:inline-block;padding:0 10px;margin-top: 10px;line-height: 20px; border-radius: 15px;background: #f0904d;color:#fff; text-align: center;}
+.expert-list .expert-details{position: absolute;bottom:0;right: 0;background: url(../images/002.png) no-repeat 100% 100%;height: 35px;width: 74px;-webkit-background-size: 82%;
+background-size: 82%;}
+.expert-list .href{position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 1;}
+
+
+
+
+

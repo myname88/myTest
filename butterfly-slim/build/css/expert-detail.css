@@ -1,0 +1,38 @@
+/* 
+* @Author: Marte
+* @Date:   2015-08-25 17:28:14
+* @Last Modified by:   Marte
+* @Last Modified time: 2015-09-01 15:07:41
+*/
+/*专家信息*/
+
+#expert-detail .content{background: #fff;font-size:12px ;color:#333;font-weight: bold;}
+.expertInfo{margin-top: 40px;padding: 10px;display: table;}
+.expertInfo>div{display: table-cell;vertical-align: top;}
+.expertInfo .expertInfo-txt{padding-left:10px;}
+.expertInfo .expertInfo-txt>span{display: block;line-height: 20px;}
+.expertInfo .expertInfo-txt>span.tel{border-bottom: 2px solid #ededed;line-height: 25px;}
+.expertInfo .expertInfo-txt>span a{text-decoration: underline;color: #76cded;}
+/*个人介绍*/
+#leftTabBox{overflow: hidden;}
+.hd{background: #f0f0f0;height: 40px;}
+.hd ul{height: 100%;display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;}
+.hd ul li{flex:1;line-height: 40px;text-align: center;}
+.hd ul li a{color:#bbb;display: block;-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;}
+.hd li.on a{height: 40px;color:#f0904d;border-bottom: 2px solid #f0904d;}
+.bd{padding: 10px;height: 100%;}
+.bd{width: 400%;height: 100%;position: absolute;}
+.bd li{padding: 10px; }
+.bd p{line-height: 25px;font-size: 15px;}
+#expert-detail .ask-question{position: fixed;bottom: 20px;left: 50%;width: 80px;height: 26px;margin-left: -40px;background: #f59934;text-align: center;line-height: 26px;color:#fff;border: none; border-radius: 40px;font-size: 12px;}
+
+
+
+
+

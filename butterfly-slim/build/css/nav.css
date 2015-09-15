@@ -1,0 +1,7 @@
+/*底部导航*/
+.navFixed{width: 100%; height:auto; background: #FFFFFF; position: fixed; z-index: 999; bottom: 0px; border-top: 1px solid #f66802;}
+.navFixed a{width: 20%; height:50px; float: left; display: block; color: #bbb8a9; text-align: center; font-size: 12px;  font-weight: bold;}
+.navFixed a .navIcon{width: 100%; height: 30px; line-height: 30px; display: block;}
+.navFixed a .navIcon img{width: 28px; height: 20px; vertical-align: middle;}
+.navFixed a .navIcon i{font-size: 28px; line-height: 30px;}
+.navFixed a.navSelected{color: #eb6100;}

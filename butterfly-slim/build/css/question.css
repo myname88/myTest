@@ -1,0 +1,95 @@
+/* reset */
+html,body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,ul,ol,li,p,blockquote,pre,hr,figure,table,caption,th,td,form,fieldset,legend,input,button,textarea,menu{margin:0;padding:0;}
+html,body,fieldset,img,iframe,abbr{border:0;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6,small{font-size:100%;}
+sup,sub{font-size:83%;}
+pre,code,kbd,samp{font-family:inherit;}
+textarea{overflow:auto;resize:none;}
+a,button{cursor:pointer;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:bold;}
+del,ins,u,s,a,a:hover{text-decoration:none;}
+/*body,textarea,input,button,select,keygen,legend{font:14px/1.14 "Helvetica Neue",Helvetica,sans-serif,\5b8b\4f53;color:#333;outline:0;font-weight: bold;}*/
+body{background:#efefef;}
+a,a:hover{color:#333;}
+
+/*----------------------------------------*/
+/*头部*/
+
+#question .content{background: #efefef;font-size:12px ;color:#333;font-weight: bold;}
+.content .header{height: 44px;width: 100%; position: fixed;top: 0;border-bottom: 3px solid #f2b168;z-index: 1;}
+.header .back{position: absolute;left: 15px;line-height: 41px;font-size: 18px;color: #f0904d;}
+.content .header h2{text-align: center;line-height: 41px;font-size: 18px;background: #fff;}
+.content .header .hd-r{position: absolute;top: 0;right: 0;}
+.content .header .hd-r .fa-search,.content .header .hd-r .fa-list-ul{color:#f08b46;line-height: 41px;margin-right: 15px;}
+/*分类*/
+.content .header .hd-r>div{float: left;}
+.content .classify-in{width: 100px;position: absolute;top: 0;right: 0px;text-align: center;font-size: 16px;font-weight: bold;overflow: hidden;z-index: 1; background: #fbfbfb;-webkit-transform: translateY(0);
+   -moz-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+     -o-transform: translateY(-150%);
+        transform: translateY(-150%);}
+.guodu{
+     -webkit-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+   -moz-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+    -ms-transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+     -o-transition:all 1s cubic-bezier(0.22, 0.61, 0.36, 1) ;
+        transition: all 1s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.content .classify-in.current {-webkit-transform: translateY(0);
+   -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+     -o-transform: translateY(0);
+        transform: translateY(0);}
+.content .classify-in ul li{border-bottom: 2px solid #d7d7d7;padding: 5px;line-height: 30px;}
+/*问题列表*/
+/*下拉*/
+.question-wrapper {position: absolute;  top: 0; left: 0; width: 100%;height: 100%;margin-top: 45px;}
+.question-scroller {
+  position: absolute;
+  min-height: 101%;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
+.question-loading {position: fixed; z-index: 100; top: 50%; left: 0; line-height: 40px; height: 40px; margin-top: -20px; display: none; text-align: center; width: 100%; }
+.question-loading span{display: inline-block; background: rgba(0,0,0,0.2); padding: 0 10px; font-size: 20px; }
+.down{margin-top: -20px;color:#ccc;text-align: center;}
+
+.content .question-list{height: 100%;padding:15px 10px 0;overflow: hidden;}
+.content .question-list .question-box{background: #fff;padding: 5px 15px;color:#7d7d7d;border-radius: 4px;margin-bottom: 10px;}
+.content .question-list .question-box .question-title{font-size: 16px;line-height:30px;margin-bottom: 10px;overflow: hidden;-ms-text-overflow: ellipsis; text-overflow: ellipsis;white-space: nowrap;}
+.content .question-list .question-box .question-info .money i{color:#e9d18b;margin-right: 5px;}
+.content .question-list .question-box .question-info .author{margin: 0 10px;}
+.content .question-list .question-box .question-info .tags i{margin-right: 5px;}
+.content .question-list .question-box .question-info .tags{float: right;}
+.content .askQuestion{width: 50px;height: 50px;border-radius: 50%;background: #eb6100 url(../images/question.png) no-repeat 50%;-webkit-background-size: 25px; background-size: 25px;position: fixed;bottom: 70px;right: 30px;box-shadow: 1px 5px 10px #8A7E7E;z-index: 1;}
+/*提问弹窗*/
+.content .cover{width: 100%;height: 100%; position: fixed;top: 0;left: 0;background: rgba(0, 0, 0, 0.25);z-index: 1;-webkit-transition: all .8s ;
+   -moz-transition: all .8s ;
+    -ms-transition: all .8s ;
+     -o-transition: all .8s ;
+        transition: all .8s ;}
+.content .askQuestion-tan{position: absolute;bottom: 50px;left: 0;width: 100%;background: #fff;z-index: 2;padding: 20px;}
+.content.current .cover{position: fixed;top: 100%;}
+.content .askQuestion-tan>div{overflow: hidden;}
+.content .askQuestion-tan .askQuestion-title span,.content .askQuestion-tan .askQuestion-detail span{float: left;width: 20%;line-height: 35px;}
+.content .askQuestion-tan .askQuestion-title input,.content .askQuestion-tan .askQuestion-detail textarea{float: right;width: 80%;text-indent: 2em;font-size: 14px;}
+.content .askQuestion-tan .buttons{text-align: center;font-size: 16px;}
+.content .askQuestion-tan button{font-size: 16px;background: #eb6100;border-radius: 5px;line-height: 30px;padding: 0 5px;color:#fff;border: 1px solid #999;margin: 20px auto;}
+

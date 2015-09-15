@@ -1,0 +1,19 @@
+{
+  "name": "butterflyjs",
+  "version": "1.0.5",
+  "description": "butterfly.js grunt product",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xylitol_lin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.4",
+    "jshint-stylish": "^1.0.1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.7.6"
+  }
+}

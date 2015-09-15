@@ -1,0 +1,73 @@
+<div data-view="js/knowledge" id="KnowledgeViews" class="views">
+<link rel="stylesheet" type="text/css" href="css/knowledge.css">
+<nav>
+    <div class="nav-back"><i class="fa fa-chevron-left fa-lg"></i><a data-action="back">返回</a></div>
+	<div class="Title left Hide">越秀知识</div>
+	<div class="icon right">
+		<span><i class="fa fa-search fa-lg"></i></span>
+		<span><i class="fa fa-list fa-lg"></i></span>
+	</div>
+	
+</nav>
+<div class="KnowledgeDown fsize12">
+	    <ul>
+			<li>全部知识</li>
+			<li>热门知识</li>
+			<li>推荐知识</li>
+			<li>最新知识</li>
+			<li class="no-line">知识分类</li>
+	    </ul>
+</div>
+
+<!--content Hide Start-->
+<div class="content Hide Btm">
+    <div class="kld-nav" id="nav">
+    	 <ul id="indicator">
+            <div class="dotty"></div>
+            <li class="active">知识</li>
+            <li>分类</li>
+        </ul>
+    </div>
+    <div id="wrapper" class="kld-main clear">
+		<div id="scroller" class="kld-content">
+			 <ul id="thelist">
+				 <li class="Getknowledge-1"></li>
+				 <li class="Getknowledge-2"></li>
+			 </ul>
+		</div>
+    </div>
+</div>
+<!--content Hide End-->
+ <script type="text/template" class="KnowledgeJson">
+        <% for(var i =0 ; i<data.length;i++){ %>
+            <div class="Knowledgviews-div">
+                <div class="kld-txt-1">
+				   	 	<div class="kld-top fsize14"><%= data[i].Title %></div>
+				   	 	<div class="kld-mid fsize12">
+				   	 		<span><%= data[i].Author %></span>
+				   	 		<span class="distance"><%= data[i].Time %></span>
+				   	 		<span><%= data[i].Size %></span>
+				   	 	</div>
+			   	</div>
+            </div>
+        <% } %>
+     </script>
+<div class="navFixed">
+		<a href="#/views/main">
+			<span class="navIcon"><img src="../images/nav/nav_1-1.png"/></span>首页
+		</a>
+		<a class="navSelected" href="#/views/knowledge">
+			<span class="navIcon"><img src="../images/nav/nav_2_2.png"/></span>知识
+		</a>
+		<a href="#/views/question">
+			<span class="navIcon"><img src="../images/nav/nav_3_1.png"/></span>爱问
+		</a>
+		<a>
+			<span class="navIcon"><img src="../images/nav/nav_4_1.png"/></span>消息
+		</a>
+		<a href="#/views/my">
+			<span class="navIcon"><img src="../images/nav/nav_5_1.png"/></span>我
+		</a>
+</div>
+
+</div>
